@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanguard Risk Management | Digital Infrastructure Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tn-blue': '#00d2ff',
+                        'tn-dark': '#0b101e',
+                        'tn-card': '#161f36',
+                        'vg-gold': '#d4af37',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b101e;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+            opacity: 1;
+        }
+        .glass-panel {
+            background: rgba(22, 31, 54, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 210, 255, 0.1);
+        }
+        .gold-glow {
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+        .blue-glow {
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="h-screen w-screen flex flex-col font-sans selection:bg-tn-blue selection:text-tn-dark">
+
+    <!-- Header / Nav -->
+    <header class="w-full p-6 flex justify-between items-center fixed top-0 z-50 glass-panel border-b-0 border-b border-tn-blue/20">
+        <div class="flex items-center gap-3">
+            <img src="This Is The One.jpg" alt="TrueNorth Logo" class="w-8 h-8 rounded-full object-cover border border-tn-blue/50 shadow-[0_0_10px_rgba(0,210,255,0.5)] animate-pulse" onerror="this.onerror=null; this.outerHTML='<div class=\'w-8 h-8 rounded-full bg-tn-dark border border-tn-blue/50 shadow-[0_0_10px_rgba(0,210,255,0.5)] flex items-center justify-center animate-pulse\'><i class=\'fa-solid fa-compass text-tn-blue text-sm\'></i></div>'">
+            <span class="font-display font-bold text-xl tracking-wider text-white">TrueNorth <span class="text-tn-blue">Operations Group</span></span>
+        </div>
+        <div class="text-sm text-gray-400 font-display tracking-widest uppercase hidden md:block">
+            Proposal // Vanguard Risk Management
+        </div>
+    </header>
+
+    <!-- Main Presentation Area -->
+    <main class="flex-grow flex items-center justify-center pt-20 pb-20 relative overflow-hidden h-full">
+        
+        <!-- Background Effects -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-tn-blue/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-vg-gold/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <!-- Slide 1: Title -->
+        <div class="slide active flex-col items-center justify-center text-center px-4 w-full max-w-4xl" id="slide-1">
+            <div class="mb-8">
+                <img src="image_ee494b6b-4e42-48d3-aa0f-19102716cefd.jpg" alt="Vanguard Logo" class="w-32 h-32 md:w-40 md:h-40 object-contain mx-auto mb-6 rounded-xl shadow-[0_0_40px_rgba(212,175,55,0.2)] border border-vg-gold/20" onerror="this.onerror=null; this.outerHTML='<div class=\'w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 rounded-xl shadow-[0_0_40px_rgba(212,175,55,0.2)] border border-vg-gold/20 flex flex-col items-center justify-center bg-tn-dark\'><i class=\'fa-solid fa-shield-halved text-5xl text-vg-gold mb-2\'></i><span class=\'text-vg-gold text-xs font-display mt-2\'>VANGUARD</span></div>'">
+            </div>
+            <h1 class="font-display text-4xl md:text-6xl font-bold text-white mb-4">Digital Infrastructure & <br>Brand Deployment</h1>
+            <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">Prepared exclusively for Vanguard Risk Management by TrueNorth Operations Group.</p>
+            <p class="text-sm text-tn-blue uppercase tracking-widest font-semibold">Date: 23 May 2026</p>
+        </div>
+
+        <!-- Slide 2: Mission -->
+        <div class="slide flex-col justify-center px-6 md:px-12 w-full max-w-5xl" id="slide-2">
+            <h2 class="font-display text-3xl md:text-4xl text-white mb-2 border-l-4 border-tn-blue pl-4">The Mission</h2>
+            <p class="text-tn-blue font-display tracking-wider mb-8 pl-5">EXECUTIVE SUMMARY</p>
+            
+            <div class="glass-panel p-8 rounded-xl md:flex gap-8 items-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-tn-blue/5 rounded-full blur-2xl"></div>
+                <div class="md:w-2/3 relative z-10">
+                    <p class="text-lg leading-relaxed text-gray-300 mb-4">
+                        Following the successful deployment of the initial demonstration site, this roadmap outlines the production environment for Vanguard Risk Management.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        We will transform the proof-of-concept into a comprehensive, highly secure, and deeply interactive digital asset designed to establish immediate authority, capture high-net-worth leads, and reflect the elite pedigree of your operatives.
+                    </p>
+                </div>
+                <div class="md:w-1/3 flex justify-center mt-6 md:mt-0 relative z-10">
+                    <i class="fa-solid fa-server text-6xl text-gray-600"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Brand Identity -->
+        <div class="slide flex-col justify-center px-6 md:px-12 w-full max-w-5xl" id="slide-3">
+            <h2 class="font-display text-3xl md:text-4xl text-white mb-2 border-l-4 border-vg-gold pl-4">Brand Identity</h2>
+            <p class="text-vg-gold font-display tracking-wider mb-8 pl-5">THE VANGUARD SHIELD</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-panel p-8 rounded-xl border border-vg-gold/20 flex flex-col items-center justify-center">
+                    <img src="image_ee494b6b-4e42-48d3-aa0f-19102716cefd.jpg" alt="Vanguard Logo" class="w-32 h-32 object-cover rounded-full border border-vg-gold/30 mb-4 shadow-[0_0_30px_rgba(212,175,55,0.1)]" onerror="this.onerror=null; this.outerHTML='<div class=\'w-32 h-32 rounded-full border border-vg-gold/30 mb-4 shadow-[0_0_30px_rgba(212,175,55,0.1)] flex items-center justify-center bg-tn-dark\'><i class=\'fa-solid fa-shield text-5xl text-vg-gold\'></i></div>'">
+                    <h3 class="font-display text-xl text-white mb-2">Bespoke VR Monogram</h3>
+                    <p class="text-center text-sm text-gray-400">Impenetrable security. Premium service. Operational readiness.</p>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-2xl font-display text-white mb-4">The Psychology of the Asset</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-tn-blue mt-1"></i>
+                            <p class="text-gray-300">The shield inherently communicates absolute defense.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-tn-blue mt-1"></i>
+                            <p class="text-gray-300">Metallic gold finish conveys premium, elite-level service.</p>
+                        </li>
+                    </ul>
+                    <div class="mt-8 p-4 bg-vg-gold/10 border border-vg-gold/30 rounded-lg">
+                        <p class="text-vg-gold font-semibold"><i class="fa-solid fa-gift mr-2"></i> Investment: £0 (Complimentary Partnership Asset)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Architecture -->
+        <div class="slide flex-col justify-center px-6 md:px-12 w-full max-w-5xl" id="slide-4">
+            <h2 class="font-display text-3xl md:text-4xl text-white mb-2 border-l-4 border-tn-blue pl-4">Digital Architecture</h2>
+            <p class="text-tn-blue font-display tracking-wider mb-8 pl-5">DEPTH & INTERACTIVITY</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-panel p-6 rounded-xl hover:-translate-y-2 transition duration-300">
+                    <i class="fa-solid fa-book-open-reader text-3xl text-tn-blue mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-2">Insights Hub</h3>
+                    <p class="text-sm text-gray-400">Dynamic content area for publishing security briefings and threat assessments.</p>
+                </div>
+                <div class="glass-panel p-6 rounded-xl hover:-translate-y-2 transition duration-300">
+                    <i class="fa-solid fa-users-viewfinder text-3xl text-tn-blue mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-2">Team Pedigree</h3>
+                    <p class="text-sm text-gray-400">Highlighting military/intelligence credentials to build immediate trust.</p>
+                </div>
+                <div class="glass-panel p-6 rounded-xl hover:-translate-y-2 transition duration-300">
+                    <i class="fa-solid fa-file-shield text-3xl text-tn-blue mb-4"></i>
+                    <h3 class="text-lg font-bold text-white mb-2">Anonymised Cases</h3>
+                    <p class="text-sm text-gray-400">Compelling narratives demonstrating capability while maintaining absolute confidentiality.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Security -->
+        <div class="slide flex-col justify-center px-6 md:px-12 w-full max-w-5xl" id="slide-5">
+            <h2 class="font-display text-3xl md:text-4xl text-white mb-2 border-l-4 border-red-500 pl-4">Operational Security</h2>
+            <p class="text-red-500 font-display tracking-wider mb-8 pl-5">ENTERPRISE-GRADE INFRASTRUCTURE</p>
+            
+            <div class="glass-panel p-8 rounded-xl border border-red-500/20">
+                <p class="text-gray-300 mb-6 italic">"Your digital presence must reflect your real-world operational standards."</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded bg-tn-dark flex items-center justify-center border border-gray-700">
+                            <i class="fa-solid fa-lock text-red-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Encrypted Comms</h4>
+                            <p class="text-xs text-gray-400">Client inquiries protected from interception.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded bg-tn-dark flex items-center justify-center border border-gray-700">
+                            <i class="fa-solid fa-shield-halved text-red-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">SSL/TLS Architecture</h4>
+                            <p class="text-xs text-gray-400">Forced HTTPS secure connections network-wide.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded bg-tn-dark flex items-center justify-center border border-gray-700">
+                            <i class="fa-solid fa-scale-balanced text-red-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">GDPR Compliance</h4>
+                            <p class="text-xs text-gray-400">Legally structured privacy & cookie protocols.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded bg-tn-dark flex items-center justify-center border border-gray-700">
+                            <i class="fa-solid fa-award text-red-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Trust Badging</h4>
+                            <p class="text-xs text-gray-400">Official SIA & BS 7858 integration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Market Value -->
+        <div class="slide flex-col justify-center px-6 md:px-12 w-full max-w-5xl" id="slide-6">
+            <h2 class="font-display text-3xl md:text-4xl text-white mb-2 border-l-4 border-vg-gold pl-4">Market Assessment</h2>
+            <p class="text-vg-gold font-display tracking-wider mb-8 pl-5">INVESTMENT & VALUE</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700 opacity-70">
+                    <h3 class="text-gray-400 font-display text-sm uppercase tracking-widest mb-4">UK Agency Average (2026)</h3>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-500">Bespoke Corporate Build</span>
+                            <span class="text-gray-400">£6,500</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-500">Brand Identity & Logo</span>
+                            <span class="text-gray-400">£1,500</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-500">Security Implementations</span>
+                            <span class="text-gray-400">£1,000</span>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-700 pt-3 flex justify-between font-bold">
+                        <span class="text-gray-400">Estimated Total</span>
+                        <span class="text-red-400">£9,000+</span>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-xl border-2 border-tn-blue relative blue-glow overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-tn-blue/20 rounded-full blur-2xl"></div>
+                    <h3 class="text-tn-blue font-display text-sm uppercase tracking-widest mb-4 font-bold flex items-center gap-2"><i class="fa-solid fa-compass"></i> TrueNorth Proposal</h3>
+                    <div class="space-y-3 mb-6 relative z-10">
+                        <div class="flex justify-between text-white">
+                            <span>Production Build & Deployment</span>
+                            <span>£2,600</span>
+                        </div>
+                        <div class="flex justify-between text-white">
+                            <span>Vanguard Shield Identity</span>
+                            <span class="text-vg-gold">£0 (Included)</span>
+                        </div>
+                    </div>
+                    <div class="border-t border-tn-blue/30 pt-4 mt-2 relative z-10">
+                        <div class="flex justify-between items-end">
+                            <span class="text-gray-300 text-sm">Total Investment</span>
+                            <span class="text-4xl font-display font-bold text-white">£2,600</span>
+                        </div>
+                        <p class="text-xs text-vg-gold mt-2 text-right">Saving over £6,000 against market average.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Payment Options -->
+        <div class="slide flex-col justify-center px-6 md:px-12 w-full max-w-5xl" id="slide-7">
+            <h2 class="font-display text-3xl md:text-4xl text-white mb-2 border-l-4 border-tn-blue pl-4">Deployment Pathways</h2>
+            <p class="text-tn-blue font-display tracking-wider mb-8 pl-5">FLEXIBLE PROCUREMENT</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Option 1 -->
+                <div class="glass-panel p-6 rounded-xl border border-gray-700 hover:border-tn-blue transition flex flex-col h-full">
+                    <div class="w-10 h-10 rounded-full bg-tn-dark border border-gray-600 flex items-center justify-center mb-4 text-gray-400 font-bold">1</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Full Deployment</h3>
+                    <p class="text-3xl font-display text-tn-blue mb-4">£2,600</p>
+                    <p class="text-sm text-gray-400 flex-grow">100% due upon commencement. Streamlines the administrative process for immediate, unhindered build and deployment.</p>
+                </div>
+                
+                <!-- Option 2 -->
+                <div class="glass-panel p-6 rounded-xl border-2 border-tn-blue relative overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-3 right-3 text-xs bg-tn-blue text-tn-dark font-bold px-2 py-1 rounded">RECOMMENDED</div>
+                    <div class="w-10 h-10 rounded-full bg-tn-blue text-tn-dark flex items-center justify-center mb-4 font-bold">2</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Standard Phased</h3>
+                    <p class="text-3xl font-display text-tn-blue mb-4">£1,300 <span class="text-sm text-gray-400">/ split</span></p>
+                    <p class="text-sm text-gray-400 flex-grow">50% deposit to immediately initiate the build phase. Remaining 50% due upon final approval and live deployment.</p>
+                </div>
+
+                <!-- Option 3 -->
+                <div class="glass-panel p-6 rounded-xl border border-gray-700 hover:border-tn-blue transition flex flex-col h-full">
+                    <div class="w-10 h-10 rounded-full bg-tn-dark border border-gray-600 flex items-center justify-center mb-4 text-gray-400 font-bold">3</div>
+                    <h3 class="text-xl font-bold text-white mb-2">6-Month Distributed</h3>
+                    <p class="text-3xl font-display text-tn-blue mb-4">£433<span class="text-sm text-gray-400">.33 / mo</span></p>
+                    <p class="text-sm text-gray-400 flex-grow">Structured over 6 months. First payment due immediately to initiate build and deployment.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Maintenance -->
+        <div class="slide flex-col justify-center px-6 md:px-12 w-full max-w-5xl" id="slide-8">
+            <h2 class="font-display text-3xl md:text-4xl text-white mb-2 border-l-4 border-vg-gold pl-4">Digital Perimeter Security</h2>
+            <p class="text-vg-gold font-display tracking-wider mb-8 pl-5">ELITE MAINTENANCE RETAINER</p>
+            
+            <div class="bg-tn-card p-8 rounded-xl border border-vg-gold/30 md:flex items-center gap-8 relative overflow-hidden">
+                <div class="absolute right-0 bottom-0 w-64 h-64 bg-vg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="md:w-2/3 relative z-10">
+                    <p class="text-gray-300 mb-4">Given the sensitive nature of your operations, a static, unmonitored website is a vulnerability. We strongly recommend our ongoing security package.</p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-shield text-vg-gold"></i> 24/7 Vulnerability Monitoring</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-code text-vg-gold"></i> Proactive Security Patching</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-server text-vg-gold"></i> SSL & Domain Routing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-database text-vg-gold"></i> Routine Encrypted Backups</li>
+                        <li class="flex items-center gap-2 col-span-1 md:col-span-2"><i class="fa-solid fa-clock text-vg-gold"></i> Up to 2 hours/mo priority operational updates</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/3 mt-6 md:mt-0 flex flex-col items-center justify-center border-t md:border-t-0 md:border-l border-gray-700 pt-6 md:pt-0 md:pl-6 relative z-10">
+                    <h4 class="text-gray-400 font-display uppercase tracking-widest text-xs mb-2">Monthly Retainer</h4>
+                    <p class="text-5xl font-display font-bold text-white mb-2">£150</p>
+                    <p class="text-xs text-center text-gray-500">Cancel anytime with 30 days notice.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: CTA & Details -->
+        <div class="slide flex-col justify-center px-6 md:px-12 w-full max-w-4xl" id="slide-9">
+            <h2 class="font-display text-4xl text-white mb-2 text-center">Initiate Deployment</h2>
+            <p class="text-gray-400 text-center mb-10">Select your preferred pathway and initiate the contract.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- TrueNorth Contact Details -->
+                <div class="glass-panel p-6 rounded-xl border border-gray-700">
+                    <h3 class="text-lg font-bold text-white mb-4 border-b border-gray-700 pb-2">TrueNorth Operations Group</h3>
+                    <p class="text-sm text-gray-400 mb-1">Unit 2 Meadow View Ind. Estate</p>
+                    <p class="text-sm text-gray-400 mb-1">Ruckinge, Ashford, Kent TN26 2NR</p>
+                    <p class="text-sm text-gray-400 mb-6">Reg No: 16854356</p>
+                    
+                    <div class="bg-tn-dark/50 p-4 rounded-lg border border-tn-blue/30 text-sm">
+                        <p class="text-gray-300 flex items-start gap-2">
+                            <i class="fa-solid fa-shield-halved text-tn-blue mt-1"></i>
+                            <span><strong>Secure Payment:</strong> Bank transfer details and formal invoices will be provided privately upon contract execution.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Action Panel -->
+                <div class="flex flex-col justify-center gap-4">
+                    <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 mb-2">
+                        <label class="block text-sm text-gray-400 mb-2">Select Payment Structure:</label>
+                        <select class="w-full bg-tn-dark border border-gray-600 text-white p-2 rounded focus:outline-none focus:border-tn-blue">
+                            <option>Option 1: Full Deployment (£2,600)</option>
+                            <option>Option 2: Standard Phased (50% Deposit)</option>
+                            <option>Option 3: 6-Month Distributed</option>
+                        </select>
+                    </div>
+                    
+                    <!-- EDIT YOUR PANDADOC/DOCUSIGN/STRIPE LINK IN THE HREF BELOW -->
+                    <a href="[INSERT_YOUR_CONTRACT_OR_PAYMENT_LINK_HERE]" target="_blank" class="w-full bg-tn-blue hover:bg-white text-tn-dark font-bold font-display text-lg py-4 px-6 rounded-lg text-center transition duration-300 shadow-[0_0_20px_rgba(0,210,255,0.3)] flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-signature"></i> Accept Proposal & Sign Contract
+                    </a>
+                    <p class="text-xs text-center text-gray-500 mt-2"><i class="fa-solid fa-lock mr-1"></i> Proceeding to secure digital signature portal.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Controls -->
+    <footer class="w-full p-4 flex justify-between items-center fixed bottom-0 z-50 glass-panel border-t-0 border-t border-tn-blue/20">
+        <button id="prevBtn" class="text-gray-400 hover:text-white px-4 py-2 disabled:opacity-30 transition" onclick="changeSlide(-1)">
+            <i class="fa-solid fa-chevron-left mr-2"></i> Prev
+        </button>
+        
+        <div class="flex gap-2" id="indicators">
+            <!-- Indicators injected by JS -->
+        </div>
+
+        <button id="nextBtn" class="text-tn-blue hover:text-white font-bold px-4 py-2 transition" onclick="changeSlide(1)">
+            Next <i class="fa-solid fa-chevron-right ml-2"></i>
+        </button>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicatorsContainer = document.getElementById('indicators');
+
+        // Create indicators
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.className = `w-2 h-2 rounded-full cursor-pointer transition-all duration-300 ${index === 0 ? 'bg-tn-blue w-6' : 'bg-gray-600'}`;
+            dot.onclick = () => goToSlide(index);
+            indicatorsContainer.appendChild(dot);
+        });
+        const indicators = indicatorsContainer.children;
+
+        function updateUI() {
+            // Update Slides
+            slides.forEach((slide, index) => {
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+
+            // Update Indicators
+            Array.from(indicators).forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.className = 'w-6 h-2 rounded-full cursor-pointer transition-all duration-300 bg-tn-blue';
+                } else {
+                    dot.className = 'w-2 h-2 rounded-full cursor-pointer transition-all duration-300 bg-gray-600 hover:bg-gray-400';
+                }
+            });
+
+            // Update Buttons
+            prevBtn.disabled = currentSlide === 0;
+            if (currentSlide === slides.length - 1) {
+                nextBtn.innerHTML = 'Finish <i class="fa-solid fa-flag-checkered ml-2"></i>';
+                nextBtn.classList.remove('text-tn-blue');
+                nextBtn.classList.add('text-vg-gold');
+            } else {
+                nextBtn.innerHTML = 'Next <i class="fa-solid fa-chevron-right ml-2"></i>';
+                nextBtn.classList.add('text-tn-blue');
+                nextBtn.classList.remove('text-vg-gold');
+            }
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = 0;
+            if (currentSlide >= slides.length) currentSlide = slides.length - 1;
+            updateUI();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateUI();
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === 'Space') {
+                if(currentSlide < slides.length - 1) changeSlide(1);
+            } else if (e.key === 'ArrowLeft') {
+                if(currentSlide > 0) changeSlide(-1);
+            }
+        });
+
+        // Init
+        updateUI();
+    </script>
+</body>
+</html>
